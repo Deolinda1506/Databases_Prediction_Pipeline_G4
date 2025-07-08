@@ -22,3 +22,11 @@
 	WHERE tgrelid = 'performance'::regclass AND NOT tgisinternal;
 2025-07-08 14:07:43.570 UTC [25276] LOG:  checkpoint starting: time
 2025-07-08 14:07:44.281 UTC [25276] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.703 s, sync=0.004 s, total=0.712 s; sync files=7, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=355 kB
+2025-07-08 14:19:19.443 UTC [31194] ERROR:  syntax error at or near "psql" at character 1
+2025-07-08 14:19:19.443 UTC [31194] STATEMENT:  psql -d postgres -f Task1/trigger.sql
+	
+	SELECT tgname FROM pg_trigger
+	WHERE tgrelid = 'performance'::regclass
+	AND NOT tgisinternal;
+2025-07-08 14:22:43.451 UTC [25276] LOG:  checkpoint starting: time
+2025-07-08 14:22:45.673 UTC [25276] LOG:  checkpoint complete: wrote 23 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.206 s, sync=0.011 s, total=2.222 s; sync files=19, longest=0.003 s, average=0.001 s; distance=61 kB, estimate=325 kB
