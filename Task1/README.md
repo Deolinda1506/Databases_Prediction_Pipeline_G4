@@ -110,11 +110,11 @@ collection.find_one({"make": "toyota"})
 
 # Task 1 - Database Design (SQL + MongoDB)
 
-## 📌 Overview
+## Overview
 
 This task focuses on designing and implementing a normalized relational database using SQL and a corresponding document model in MongoDB. The dataset used is the [Automobile dataset](https://www.kaggle.com/datasets/toramky/automobile-dataset), which contains various attributes about cars, including technical specifications, performance metrics, and pricing.
 
----
+
 
 ##Relational Schema (SQL)
 
@@ -138,9 +138,9 @@ We normalized the dataset into **three main tables** plus a logging table, ensur
   - `performance.car_id` → `cars.car_id`
   - `price_history.performance_id` → `performance.performance_id`
 
----
 
-## ⚙️ Stored Procedure
+
+## Stored Procedure
 
 **File:** `stored_procedure.sql`
 
@@ -150,9 +150,8 @@ Defines a stored procedure `insert_performance(...)` which:
 
 Helps automate data validation before inserting new performance metrics.
 
----
 
-## 🔄 Trigger
+## Trigger
 
 **File:** `trigger.sql`
 
