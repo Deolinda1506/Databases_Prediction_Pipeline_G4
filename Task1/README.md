@@ -116,11 +116,11 @@ This task focuses on designing and implementing a normalized relational database
 
 ---
 
-## 🗃️ Relational Schema (SQL)
+##Relational Schema (SQL)
 
 We normalized the dataset into **three main tables** plus a logging table, ensuring **3rd Normal Form (3NF)**:
 
-### 📋 Tables:
+### Tables:
 
 1. **`cars`**
    - Contains basic car details like make, body style, and engine layout.
@@ -131,7 +131,7 @@ We normalized the dataset into **three main tables** plus a logging table, ensur
 4. **`price_history`**
    - Tracks all price changes for auditability.
 
-### 🔐 Keys & Constraints:
+###Keys & Constraints:
 - **Primary keys**: `car_id`, `engine_id`, `performance_id`
 - **Foreign keys**:
   - `engine_specs.car_id` → `cars.car_id`
@@ -148,7 +148,7 @@ Defines a stored procedure `insert_performance(...)` which:
 - Validates that the price is non-null and non-negative.
 - Inserts the record into the `performance` table.
 
-✅ Helps automate data validation before inserting new performance metrics.
+Helps automate data validation before inserting new performance metrics.
 
 ---
 
@@ -161,37 +161,10 @@ Defines a trigger function and trigger:
 - Automatically logs price changes into the `price_history` table.
 - Captures old and new price along with timestamp.
 
-✅ Supports historical tracking of price changes for each car entry.
+Supports historical tracking of price changes for each car entry.
 
----
 
-## 🍃 MongoDB Schema
 
-**File:** `mongo_schema.json`
-
-In MongoDB, the same data is modeled as a **single document per car**, including nested subdocuments:
-
-- `engine_specs` and `performance` are embedded
-- This structure optimizes for **read-heavy queries** and **document cohesion**
-
-Example document:
-```json
-{
-  "make": "audi",
-  "body_style": "sedan",
-  "drive_wheels": "fwd",
-  "engine_location": "front",
-  "engine_specs": {
-    "engine_type": "mpfi",
-    "num_of_cylinders": "four",
-    "engine_size": 109
-  },
-  "performance": {
-    "horsepower": 102,
-    "city_mpg": 24,
-    "price": 13950
-  }
-}
 
 
 
