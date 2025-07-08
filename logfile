@@ -1,0 +1,24 @@
+2025-07-08 13:47:43.208 UTC [25275] LOG:  starting PostgreSQL 15.13 (Homebrew) on x86_64-pc-linux-gnu, compiled by gcc-11 (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, 64-bit
+2025-07-08 13:47:43.208 UTC [25275] LOG:  listening on IPv6 address "::1", port 5432
+2025-07-08 13:47:43.208 UTC [25275] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-07-08 13:47:43.210 UTC [25275] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-07-08 13:47:43.215 UTC [25278] LOG:  database system was shut down at 2025-07-08 13:46:45 UTC
+2025-07-08 13:47:43.220 UTC [25275] LOG:  database system is ready to accept connections
+2025-07-08 13:49:34.571 UTC [26094] LOG:  invalid length of startup packet
+2025-07-08 13:49:34.590 UTC [26095] LOG:  invalid length of startup packet
+2025-07-08 13:49:34.608 UTC [26096] LOG:  invalid length of startup packet
+2025-07-08 13:49:34.626 UTC [26097] LOG:  invalid length of startup packet
+2025-07-08 13:52:43.307 UTC [25276] LOG:  checkpoint starting: time
+2025-07-08 13:52:54.066 UTC [25276] LOG:  checkpoint complete: wrote 110 buffers (0.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=10.725 s, sync=0.028 s, total=10.759 s; sync files=63, longest=0.002 s, average=0.001 s; distance=481 kB, estimate=481 kB
+2025-07-08 13:57:43.159 UTC [25276] LOG:  checkpoint starting: time
+2025-07-08 13:57:43.669 UTC [25276] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.502 s, sync=0.004 s, total=0.511 s; sync files=5, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=433 kB
+2025-07-08 13:57:58.269 UTC [30593] FATAL:  lock file "postmaster.pid" already exists
+2025-07-08 13:57:58.269 UTC [30593] HINT:  Is another postmaster (PID 25275) running in data directory "/home/linuxbrew/.linuxbrew/var/postgres"?
+2025-07-08 14:02:43.762 UTC [25276] LOG:  checkpoint starting: time
+2025-07-08 14:02:44.474 UTC [25276] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.702 s, sync=0.004 s, total=0.712 s; sync files=8, longest=0.002 s, average=0.001 s; distance=44 kB, estimate=394 kB
+2025-07-08 14:05:51.728 UTC [31194] ERROR:  cannot cast type smallint to bit at character 22
+2025-07-08 14:05:51.728 UTC [31194] STATEMENT:  SELECT tgname, tgtype::bit(8), tgrelid::regclass, tgfoid::regprocedure
+	FROM pg_trigger
+	WHERE tgrelid = 'performance'::regclass AND NOT tgisinternal;
+2025-07-08 14:07:43.570 UTC [25276] LOG:  checkpoint starting: time
+2025-07-08 14:07:44.281 UTC [25276] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.703 s, sync=0.004 s, total=0.712 s; sync files=7, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=355 kB
