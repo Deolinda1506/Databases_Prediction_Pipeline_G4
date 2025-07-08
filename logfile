@@ -30,3 +30,8 @@
 	AND NOT tgisinternal;
 2025-07-08 14:22:43.451 UTC [25276] LOG:  checkpoint starting: time
 2025-07-08 14:22:45.673 UTC [25276] LOG:  checkpoint complete: wrote 23 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.206 s, sync=0.011 s, total=2.222 s; sync files=19, longest=0.003 s, average=0.001 s; distance=61 kB, estimate=325 kB
+2025-07-08 14:26:23.951 UTC [42095] ERROR:  syntax error at or near "grep" at character 1
+2025-07-08 14:26:23.951 UTC [42095] STATEMENT:  grep -i 'CREATE TABLE' Task1/schema.sql | wc -l
+	
+	SELECT count(*) FROM information_schema.tables
+	WHERE table_schema = 'public' AND table_type = 'BASE TABLE';
