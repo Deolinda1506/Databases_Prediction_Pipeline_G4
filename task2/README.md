@@ -1,4 +1,4 @@
-Here we the FastAPI endpoints for 
+Here, the FastAPI endpoints for 
 Technology Stack - FastAPI
 
 Endpoints
