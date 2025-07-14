@@ -1,15 +1,18 @@
-Here, the FastAPI endpoints for 
-Technology Stack - FastAPI
+API Development Using FastAPI  
+**Contributor**: David
 
-Endpoints
+### Objective
+- Develop RESTful API endpoints to allow interaction with the SQL database.
 
-Create (POST)
+### Key Endpoints (for `cars` table)
+- `POST /cars/`: Create a new car record
+- `GET /cars/`: Get all cars
+- `GET /cars/{id}`: Get a specific car
+- `PUT /cars/{id}`: Update a car
+- `DELETE /cars/{id}`: Delete a car
 
-Read (GET)
-
-Update (PUT)
-
-Delete(DELETE)
-
-The CRUD
-Has created
+### Files
+- `main.py`: FastAPI routes
+- `models.py`: SQLAlchemy ORM models
+- `schemas.py`: Pydantic data validation
+- `database.py`: DB connection setup
