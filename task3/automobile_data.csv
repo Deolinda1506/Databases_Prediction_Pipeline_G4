@@ -1,0 +1,6 @@
+make,fuel-type,num-of-doors,engine-size,horsepower,city-mpg,highway-mpg,price
+audi,gas,four,130,111,21,27,13495
+audi,gas,two,152,154,19,26,16500
+bmw,gas,four,160,160,18,25,20000
+bmw,diesel,four,170,180,20,28,25000
+honda,gas,two,100,88,35,45,9800
