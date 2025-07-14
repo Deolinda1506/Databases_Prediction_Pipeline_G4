@@ -1,5 +1,5 @@
 Data Preparation for Machine Learning  
-Contributor**: David & Anissa
+Contributors: David & Anissa
 
 Objective
 Prepare data from SQL and MongoDB for machine learning model training.
