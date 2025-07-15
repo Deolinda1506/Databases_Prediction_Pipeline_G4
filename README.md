@@ -11,22 +11,6 @@ This project demonstrates an end-to-end data pipeline that integrates relational
 - Fetch latest entries from the database and make predictions.
 
 
-## Project Structure
-
-.
-├── database/
-│ ├── database.py # PostgreSQL DB connection setup
-│ ├── models.py # SQLAlchemy models
-│ └── schemas.py # Pydantic schemas for FastAPI
-├── main.py # FastAPI app with CRUD operations
-├── train_model.ipynb # Jupyter Notebook to train and save ML model
-├── prediction.py # Script to fetch latest car record and predict price category
-├── mongodb_collections.json # JSON representation of MongoDB schema
-├── ERD.png # Entity Relationship Diagram
-├── requirements.txt # Python dependencies
-└── README.md 
-
-
 ## Task 1 - Database Design & MongoDB
 
 ### Relational Database (PostgreSQL)
