@@ -40,7 +40,6 @@ This project demonstrates an end-to-end data pipeline that integrates relational
 
 - Uses PostgreSQL as the primary DB
 - Input validation handled via **Pydantic models**
-- API tested using **http://localhost:8000/docs**
 
 
 
@@ -70,4 +69,5 @@ This project demonstrates an end-to-end data pipeline that integrates relational
 
 # Clone the repository
 https://github.com/Deolinda1506/Databases_Prediction_Pipeline_G4.git
+
 Databases_Prediction_Pipeline_G4
